@@ -46,14 +46,14 @@ jobs:
       - name: 🚧 Set up project
         run: pnpm dev:prepare
 
+      - name: 🛠 Build project
+        run: pnpm build
+
       - name: 🧪 Test project
         run: pnpm test -- --coverage
 
       - name: 💪 Test types
         run: pnpm test:types
-
-      - name: 🛠 Build project
-        run: pnpm build
 
       - name: 🟩 Coverage
         uses: codecov/codecov-action@v3
