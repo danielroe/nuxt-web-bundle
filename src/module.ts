@@ -4,7 +4,6 @@ import { fileURLToPath, pathToFileURL } from 'node:url'
 import { defineNuxtModule, useLogger } from '@nuxt/kit'
 import chalk from 'chalk'
 import { globby } from 'globby'
-import * as mime from 'mime'
 import { basename, dirname, resolve } from 'pathe'
 import { joinURL, parseURL } from 'ufo'
 import { BundleBuilder } from 'wbn'
@@ -26,7 +25,7 @@ export default defineNuxtModule<ModuleOptions>({
     formatVersion: 'b2',
     filename: 'bundle.wbn',
   }),
-  async setup(options, nuxt) {
+  async setup (options, nuxt) {
     // Skip when preparing
     if (nuxt.options._prepare) return
 
@@ -60,11 +59,12 @@ export default defineNuxtModule<ModuleOptions>({
         const files = await globby('**/*', {
           cwd: resolve(nuxt.options.rootDir, 'dist'),
         })
+        const getType = await import('mime').then(r => (r as any).getType || r.default.getType)
 
         for (const [index, file] of files.sort().reverse().entries()) {
           const content = await fsp.readFile(resolve(nuxt.options.rootDir, 'dist', file))
           const headers = {
-            'Content-Type': mime.getType(basename(file)) || 'application/octet-stream',
+            'Content-Type': getType(basename(file)) || 'application/octet-stream',
             'Access-Control-Allow-Origin': '*',
           }
           const url = new URL(file, options.baseURL)
