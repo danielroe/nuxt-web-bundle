@@ -3,9 +3,7 @@
   "name": "nuxt-web-bundle-playground",
   "type": "module",
   "scripts": {
-    "dev": "nuxi dev",
-    "build": "nuxi build",
-    "generate": "nuxi generate"
+    "dev": "nuxi build && echo '---------------------------------------------\nDownload bundle.wbn and open locally to test.\n---------------------------------------------\n' && npx serve dist"
   },
   "devDependencies": {
     "nuxt": "^3.0.0-rc.11",
