@@ -67,15 +67,15 @@
     "@types/mime": "^3.0.1",
     "@types/node": "^18.11.9",
     "@types/serve-handler": "^6.1.1",
-    "@vitest/coverage-c8": "^0.24.5",
+    "@vitest/coverage-c8": "^0.25.1",
     "c8": "^7.12.0",
     "conventional-changelog-conventionalcommits": "^5.0.0",
-    "eslint": "^8.26.0",
+    "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "expect-type": "^0.15.0",
     "get-port-please": "^2.6.1",
-    "husky": "^8.0.1",
+    "husky": "^8.0.2",
     "lint-staged": "^13.0.3",
     "nuxt": "npm:nuxt3@3.0.0-rc.12-27763889.5e7dfc2",
     "pinst": "^3.0.0",
@@ -83,13 +83,13 @@
     "release-it": "^15.5.0",
     "serve-handler": "^6.1.5",
     "typescript": "^4.8.4",
-    "vitest": "^0.24.5",
-    "vue": "^3.2.41"
+    "vitest": "^0.25.1",
+    "vue": "^3.2.45"
   },
   "resolutions": {
     "nuxt-web-bundle": "link:."
   },
-  "packageManager": "pnpm@7.14.2",
+  "packageManager": "pnpm@7.15.0",
   "volta": {
     "node": "18.12.1"
   }
