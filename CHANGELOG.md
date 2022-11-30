@@ -1,5 +1,7 @@
 
 
+## [0.1.0](https://github.com/danielroe/nuxt-web-bundle/compare/0.0.3...0.1.0) (2022-11-30)
+
 ## [0.0.3](https://github.com/danielroe/nuxt-web-bundle/compare/0.0.2...0.0.3) (2022-10-15)
 
 
