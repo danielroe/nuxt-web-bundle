@@ -16,7 +16,7 @@ importers:
       '@types/mime': 3.0.1
       '@types/node': 18.11.11
       '@types/serve-handler': 6.1.1
-      '@vitest/coverage-c8': 0.25.3
+      '@vitest/coverage-c8': 0.25.6
       c8: 7.12.0
       chalk: ^5.1.2
       conventional-changelog-conventionalcommits: 5.0.0
@@ -37,7 +37,7 @@ importers:
       serve-handler: 6.1.5
       typescript: 4.9.3
       ufo: ^1.0.1
-      vitest: 0.25.3
+      vitest: 0.25.6
       vue: 3.2.45
       wbn: ^0.0.8
     dependencies:
@@ -57,7 +57,7 @@ importers:
       '@types/mime': 3.0.1
       '@types/node': 18.11.11
       '@types/serve-handler': 6.1.1
-      '@vitest/coverage-c8': 0.25.3
+      '@vitest/coverage-c8': 0.25.6
       c8: 7.12.0
       conventional-changelog-conventionalcommits: 5.0.0
       eslint: 8.29.0
@@ -73,7 +73,7 @@ importers:
       release-it: 15.5.1
       serve-handler: 6.1.5
       typescript: 4.9.3
-      vitest: 0.25.3
+      vitest: 0.25.6
       vue: 3.2.45
 
   playground:
@@ -1519,11 +1519,11 @@ packages:
       vue: 3.2.45
     dev: true
 
-  /@vitest/coverage-c8/0.25.3:
-    resolution: {integrity: sha512-+tmrB3E7pZTSM+aWKzLk0FpyyaQOoRQf0594hHp+E3Kk0tiFONiEFYf7+9a1Z+C2ffU/0w6KvyBjpNPdashMrg==}
+  /@vitest/coverage-c8/0.25.6:
+    resolution: {integrity: sha512-+Bcs1XZ8CuEe52QSOgzqmqiV82CXZRRj3yclPQqtLkUV4S6+kdOdfRTtMHOilwhZH70giDjBQx3jgiZoYgFVMA==}
     dependencies:
       c8: 7.12.0
-      vitest: 0.25.3
+      vitest: 0.25.6
     transitivePeerDependencies:
       - '@edge-runtime/vm'
       - '@vitest/browser'
@@ -7560,12 +7560,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /strip-literal/0.4.2:
-    resolution: {integrity: sha512-pv48ybn4iE1O9RLgCAN0iU4Xv7RlBTiit6DKmMiErbs9x1wH6vXBs45tWc0H5wUIF6TLTrKweqkmYF/iraQKNw==}
-    dependencies:
-      acorn: 8.8.1
-    dev: true
-
   /strip-literal/1.0.0:
     resolution: {integrity: sha512-5o4LsH1lzBzO9UFH63AJ2ad2/S2AVx6NtjOcaz+VTT2h1RiRvbipW72z8M/lxEhcPHDBQwpDrnTF7sXy/7OwCQ==}
     dependencies:
@@ -8314,8 +8308,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.25.3:
-    resolution: {integrity: sha512-/UzHfXIKsELZhL7OaM2xFlRF8HRZgAHtPctacvNK8H4vOcbJJAMEgbWNGSAK7Y9b1NBe5SeM7VTuz2RsTHFJJA==}
+  /vitest/0.25.6:
+    resolution: {integrity: sha512-jdPgmZ7BcDnm1+hmMPIl9BZjSy+b8Y8V0tQMsv7ECO90Qic7EZ5/+traILXLpsXgqK5KgVrUJmchevAUuKL/1w==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
@@ -8345,7 +8339,7 @@ packages:
       debug: 4.3.4
       local-pkg: 0.4.2
       source-map: 0.6.1
-      strip-literal: 0.4.2
+      strip-literal: 1.0.0
       tinybench: 2.3.1
       tinypool: 0.3.0
       tinyspy: 1.0.2
