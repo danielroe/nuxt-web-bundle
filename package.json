@@ -89,7 +89,7 @@
   "resolutions": {
     "nuxt-web-bundle": "link:."
   },
-  "packageManager": "pnpm@7.22.0",
+  "packageManager": "pnpm@7.23.0",
   "volta": {
     "node": "18.13.0"
   }
