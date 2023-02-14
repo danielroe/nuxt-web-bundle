@@ -14,7 +14,7 @@ importers:
       '@nuxtjs/eslint-config-typescript': 12.0.0
       '@release-it/conventional-changelog': 5.1.1
       '@types/mime': 3.0.1
-      '@types/node': 18.11.19
+      '@types/node': 18.13.0
       '@types/serve-handler': 6.1.1
       '@vitest/coverage-c8': 0.28.5
       c8: 7.12.0
@@ -55,7 +55,7 @@ importers:
       '@nuxtjs/eslint-config-typescript': 12.0.0_7kw3g6rralp5ps6mg3uyzz6azm
       '@release-it/conventional-changelog': 5.1.1_release-it@15.6.0
       '@types/mime': 3.0.1
-      '@types/node': 18.11.19
+      '@types/node': 18.13.0
       '@types/serve-handler': 6.1.1
       '@vitest/coverage-c8': 0.28.5
       c8: 7.12.0
@@ -67,7 +67,7 @@ importers:
       get-port-please: 3.0.1
       husky: 8.0.3
       lint-staged: 13.1.2
-      nuxt: 3.0.0_sojb44mg3qksmavqdemw4w7cga
+      nuxt: 3.0.0_gj7lescvx3eofwrgztaceqogli
       pinst: 3.0.0
       prettier: 2.8.4
       release-it: 15.6.0
@@ -698,7 +698,7 @@ packages:
     resolution: {integrity: sha512-jfpVHxi1AHfNO3D6iD1RJE6fx/7cAzekvG90poIzVawp/L+I4DNdy8pCgqBScJW4bfWOpHeLYbtQQlL/hPmkjw==}
     dev: true
 
-  /@nuxt/vite-builder/3.0.0_6okgjlo6cur6joofsurfrylv2i:
+  /@nuxt/vite-builder/3.0.0_tzrclqrwcmzfwbrtzmcbdchgzy:
     resolution: {integrity: sha512-eMnpPpjHU8rGZcsJUksCuSX+6dpId03q8LOSStsm6rXzrNJtZIcwt0nBRTUaigckXIozX8ZNl5u2OPGUfUbMrw==}
     engines: {node: ^14.16.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
     peerDependencies:
@@ -733,8 +733,8 @@ packages:
       rollup-plugin-visualizer: 5.8.3_rollup@2.79.1
       ufo: 1.0.1
       unplugin: 1.0.0
-      vite: 3.2.4_@types+node@18.11.19
-      vite-node: 0.25.3_@types+node@18.11.19
+      vite: 3.2.4_@types+node@18.13.0
+      vite-node: 0.25.3_@types+node@18.13.0
       vite-plugin-checker: 0.5.1_pbsly4sbckq6htsslywgyqe74m
       vue: 3.2.45
       vue-bundle-renderer: 1.0.0
@@ -1292,8 +1292,8 @@ packages:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: true
 
-  /@types/node/18.11.19:
-    resolution: {integrity: sha512-YUgMWAQBWLObABqrvx8qKO1enAvBUdjZOAWQ5grBAkp5LQv45jBvYKZ3oFS9iKRCQyFjqw6iuEa1vmFqtxYLZw==}
+  /@types/node/18.13.0:
+    resolution: {integrity: sha512-gC3TazRzGoOnoKAhUx+Q0t8S9Tzs74z7m0ipwGpSqQrleP14hKxP4/JUeEQcD3W1/aIpnWl8pHowI7WokuZpXg==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -1311,7 +1311,7 @@ packages:
   /@types/serve-handler/6.1.1:
     resolution: {integrity: sha512-bIwSmD+OV8w0t2e7EWsuQYlGoS1o5aEdVktgkXaa43Zm0qVWi21xaSRb3DQA1UXD+DJ5bRq1Rgu14ZczB+CjIQ==}
     dependencies:
-      '@types/node': 18.11.19
+      '@types/node': 18.13.0
     dev: true
 
   /@typescript-eslint/eslint-plugin/5.45.0_7j4si2muomlhbtmzazrdb2unwy:
@@ -5075,7 +5075,7 @@ packages:
     resolution: {integrity: sha512-KWYVV1c4i+jbMpaBC+U++4Va0cp8OisU185o73T1vo99hqi7w8tSJfUXYswwqqrjzwxa6KpRK54WhPvwf5w6PQ==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 18.11.19
+      '@types/node': 18.13.0
       merge-stream: 2.0.0
       supports-color: 7.2.0
     dev: true
@@ -6001,7 +6001,7 @@ packages:
       - vti
     dev: true
 
-  /nuxt/3.0.0_sojb44mg3qksmavqdemw4w7cga:
+  /nuxt/3.0.0_gj7lescvx3eofwrgztaceqogli:
     resolution: {integrity: sha512-RNlD78uv04ZiXWmlx9f1tnJfrqsYAWHU+4gbgOTQpIBmQzHWPWiox+fm/1m93iKfEd5sJi9TJUoXX5yBObVZYw==}
     engines: {node: ^14.16.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
     hasBin: true
@@ -6011,7 +6011,7 @@ packages:
       '@nuxt/schema': 3.0.0
       '@nuxt/telemetry': 2.1.8
       '@nuxt/ui-templates': 1.0.0
-      '@nuxt/vite-builder': 3.0.0_6okgjlo6cur6joofsurfrylv2i
+      '@nuxt/vite-builder': 3.0.0_tzrclqrwcmzfwbrtzmcbdchgzy
       '@unhead/ssr': 1.0.4
       '@vue/reactivity': 3.2.45
       '@vue/shared': 3.2.45
@@ -8294,7 +8294,7 @@ packages:
       - terser
     dev: true
 
-  /vite-node/0.25.3_@types+node@18.11.19:
+  /vite-node/0.25.3_@types+node@18.13.0:
     resolution: {integrity: sha512-0TyDFASTLJUOPRE5e5isyXXgM/fbTD6D37NKduk718l+Ih9FSwqaaHT5f0pIkJMXzyYT6zo4b4FA6pnGdoky3A==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
@@ -8304,7 +8304,7 @@ packages:
       pathe: 0.2.0
       source-map: 0.6.1
       source-map-support: 0.5.21
-      vite: 3.2.4_@types+node@18.11.19
+      vite: 3.2.4_@types+node@18.13.0
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -8315,7 +8315,7 @@ packages:
       - terser
     dev: true
 
-  /vite-node/0.28.5_@types+node@18.11.19:
+  /vite-node/0.28.5_@types+node@18.13.0:
     resolution: {integrity: sha512-LmXb9saMGlrMZbXTvOveJKwMTBTNUH66c8rJnQ0ZPNX+myPEol64+szRzXtV5ORb0Hb/91yq+/D3oERoyAt6LA==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
@@ -8327,7 +8327,7 @@ packages:
       picocolors: 1.0.0
       source-map: 0.6.1
       source-map-support: 0.5.21
-      vite: 3.2.4_@types+node@18.11.19
+      vite: 3.2.4_@types+node@18.13.0
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -8370,7 +8370,7 @@ packages:
       strip-ansi: 6.0.1
       tiny-invariant: 1.3.1
       typescript: 4.9.5
-      vite: 3.2.4_@types+node@18.11.19
+      vite: 3.2.4_@types+node@18.13.0
       vscode-languageclient: 7.0.0
       vscode-languageserver: 7.0.0
       vscode-languageserver-textdocument: 1.0.7
@@ -8447,7 +8447,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vite/3.2.4_@types+node@18.11.19:
+  /vite/3.2.4_@types+node@18.13.0:
     resolution: {integrity: sha512-Z2X6SRAffOUYTa+sLy3NQ7nlHFU100xwanq1WDwqaiFiCe+25zdxP1TfCS5ojPV2oDDcXudHIoPnI1Z/66B7Yw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -8472,7 +8472,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.11.19
+      '@types/node': 18.13.0
       esbuild: 0.15.16
       postcss: 8.4.19
       resolve: 1.22.1
@@ -8505,7 +8505,7 @@ packages:
     dependencies:
       '@types/chai': 4.3.4
       '@types/chai-subset': 1.3.3
-      '@types/node': 18.11.19
+      '@types/node': 18.13.0
       '@vitest/expect': 0.28.5
       '@vitest/runner': 0.28.5
       '@vitest/spy': 0.28.5
@@ -8524,8 +8524,8 @@ packages:
       tinybench: 2.3.1
       tinypool: 0.3.1
       tinyspy: 1.0.2
-      vite: 3.2.4_@types+node@18.11.19
-      vite-node: 0.28.5_@types+node@18.11.19
+      vite: 3.2.4_@types+node@18.13.0
+      vite-node: 0.28.5_@types+node@18.13.0
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
