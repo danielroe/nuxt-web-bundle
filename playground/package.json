@@ -6,7 +6,7 @@
     "dev": "nuxi build && echo 'Download bundle.wbn and open locally to test.' && npx serve dist"
   },
   "devDependencies": {
-    "nuxt": "3.2.3",
+    "nuxt": "3.3.1",
     "nuxt-web-bundle": "latest"
   }
 }
