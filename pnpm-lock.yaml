@@ -39,7 +39,7 @@ importers:
       ufo: ^1.0.1
       vitest: 0.29.7
       vue: 3.2.47
-      wbn: ^0.0.8
+      wbn: ^0.0.9
     dependencies:
       '@nuxt/kit': 3.3.1
       chalk: 5.1.2
@@ -47,7 +47,7 @@ importers:
       mime: 3.0.0
       pathe: 1.0.0
       ufo: 1.0.1
-      wbn: 0.0.8
+      wbn: 0.0.9
     devDependencies:
       '@nuxt/module-builder': 0.2.1
       '@nuxt/schema': 3.3.1
@@ -9238,8 +9238,8 @@ packages:
       '@vue/shared': 3.2.47
     dev: true
 
-  /wbn/0.0.8:
-    resolution: {integrity: sha512-vb+dZ45opdUvtIH6UKXmoPsN99JLH9FFnN/EizD1WAxY2SnbjILa0099u9Tl+TW/WddmJrGqckpTEYiN7FtJbA==}
+  /wbn/0.0.9:
+    resolution: {integrity: sha512-q/nuD6VVfOQOpQF9x6g1imfyzSxhHiRcABtTddD2CN/E+N+yfzf5G6XLHIYaajI7VMgSF8iXGsW6/MFc7Onrdg==}
     engines: {node: '>= 12.0.0'}
     hasBin: true
     dependencies:
