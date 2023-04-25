@@ -50,7 +50,7 @@
     "postpublish": "pinst --enable"
   },
   "dependencies": {
-    "@nuxt/kit": "3.4.1",
+    "@nuxt/kit": "^3.4.1",
     "chalk": "^5.1.2",
     "globby": "^13.1.2",
     "mime": "^3.0.0",
