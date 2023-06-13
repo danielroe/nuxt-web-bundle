@@ -42,12 +42,10 @@
     "lint:prettier": "prettier --write --loglevel warn",
     "prepack": "pnpm build",
     "prepare": "husky install",
-    "prepublishOnly": "pnpm lint && pnpm test && pinst --disable",
-    "release": "release-it",
+    "prepublishOnly": "pnpm lint && pnpm test",
+    "release": "bumpp && pnpm publish",
     "test": "vitest run",
-    "test:types": "tsc --noEmit",
-    "postinstall": "husky install",
-    "postpublish": "pinst --enable"
+    "test:types": "tsc --noEmit"
   },
   "dependencies": {
     "@nuxt/kit": "^3.5.3",
@@ -63,11 +61,11 @@
     "@nuxt/schema": "3.5.3",
     "@nuxt/test-utils": "3.5.3",
     "@nuxtjs/eslint-config-typescript": "12.0.0",
-    "@release-it/conventional-changelog": "5.1.1",
     "@types/mime": "3.0.1",
     "@types/node": "20.3.0",
     "@types/serve-handler": "6.1.1",
     "@vitest/coverage-v8": "0.32.0",
+    "bumpp": "^9.1.1",
     "conventional-changelog-conventionalcommits": "6.0.0",
     "eslint": "8.42.0",
     "eslint-config-prettier": "8.8.0",
@@ -77,9 +75,7 @@
     "husky": "8.0.3",
     "lint-staged": "13.2.2",
     "nuxt": "3.5.3",
-    "pinst": "3.0.0",
     "prettier": "2.8.8",
-    "release-it": "15.11.0",
     "serve-handler": "6.1.5",
     "typescript": "5.1.3",
     "vitest": "0.32.0",
@@ -88,8 +84,5 @@
   "resolutions": {
     "nuxt-web-bundle": "link:."
   },
-  "packageManager": "pnpm@8.6.2",
-  "volta": {
-    "node": "18.16.0"
-  }
+  "packageManager": "pnpm@8.6.2"
 }
