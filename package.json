@@ -82,6 +82,7 @@
     "vue": "3.3.4"
   },
   "resolutions": {
+    "@nuxt/kit": "3.5.3",
     "nuxt-web-bundle": "link:."
   },
   "packageManager": "pnpm@8.6.6"
