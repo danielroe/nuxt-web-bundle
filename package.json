@@ -75,7 +75,7 @@
     "husky": "8.0.3",
     "lint-staged": "13.3.0",
     "nuxt": "3.5.3",
-    "prettier": "3.0.1",
+    "prettier": "3.0.2",
     "serve-handler": "6.1.5",
     "typescript": "5.1.6",
     "vitest": "0.34.1",
