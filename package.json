@@ -63,7 +63,7 @@
     "@nuxtjs/eslint-config-typescript": "12.1.0",
     "@types/mime": "3.0.2",
     "@types/node": "20.8.3",
-    "@types/serve-handler": "6.1.1",
+    "@types/serve-handler": "6.1.2",
     "@vitest/coverage-v8": "0.34.6",
     "bumpp": "9.2.0",
     "conventional-changelog-conventionalcommits": "6.1.0",
