@@ -50,7 +50,7 @@
   "dependencies": {
     "@nuxt/kit": "^3.5.3",
     "chalk": "^5.2.0",
-    "globby": "^13.1.4",
+    "globby": "^14.0.0",
     "mime": "^3.0.0",
     "pathe": "^1.1.1",
     "ufo": "^1.1.2",
