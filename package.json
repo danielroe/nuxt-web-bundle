@@ -57,9 +57,9 @@
     "wbn": "^0.0.9"
   },
   "devDependencies": {
-    "@nuxt/module-builder": "0.4.0",
-    "@nuxt/schema": "3.5.3",
-    "@nuxt/test-utils": "3.5.3",
+    "@nuxt/module-builder": "0.5.5",
+    "@nuxt/schema": "3.11.1",
+    "@nuxt/test-utils": "3.12.0",
     "@nuxtjs/eslint-config-typescript": "12.1.0",
     "@types/mime": "3.0.4",
     "@types/node": "20.11.28",
@@ -74,15 +74,15 @@
     "get-port-please": "3.1.2",
     "husky": "8.0.3",
     "lint-staged": "13.3.0",
-    "nuxt": "3.5.3",
+    "nuxt": "3.11.1",
     "prettier": "3.2.4",
     "serve-handler": "6.1.5",
     "typescript": "5.3.3",
     "vitest": "0.34.6",
-    "vue": "3.3.4"
+    "vue": "3.4.21"
   },
   "resolutions": {
-    "@nuxt/kit": "3.5.3",
+    "@nuxt/kit": "3.11.1",
     "nuxt-web-bundle": "link:."
   },
   "packageManager": "pnpm@8.14.0"
