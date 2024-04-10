@@ -31,7 +31,7 @@ export default defineNuxtModule<ModuleOptions>({
 
     nuxt.options._generate = true
 
-    nuxt.hook('nitro:config', config => {
+    nuxt.hook('nitro:config', (config) => {
       config.prerender ||= {}
       config.prerender.crawlLinks = true
       config.prerender.routes = [
@@ -87,7 +87,7 @@ export default defineNuxtModule<ModuleOptions>({
         const buf = builder.createBundle()
         await fsp.writeFile(
           resolve(nuxt.options.rootDir, 'dist', options.filename),
-          Buffer.from(buf, buf.byteOffset, buf.byteLength)
+          Buffer.from(buf, buf.byteOffset, buf.byteLength),
         )
         const url = pathToFileURL(resolve(nuxt.options.rootDir, 'dist', options.filename))
         logger.success(`Bundle generated at \`${url}\`.`)
