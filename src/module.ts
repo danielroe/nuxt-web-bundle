@@ -44,6 +44,7 @@ export default defineNuxtModule<ModuleOptions>({
     nuxt.options._layers.push({
       cwd: themeDir,
       config: { rootDir: themeDir, srcDir: themeDir },
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } as any)
 
     const logger = useLogger('nuxt-web-bundle')
@@ -59,6 +60,7 @@ export default defineNuxtModule<ModuleOptions>({
         const files = await globby('**/*', {
           cwd: resolve(nuxt.options.rootDir, 'dist'),
         })
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const getType = await import('mime').then(r => (r as any).getType || r.default.getType)
 
         for (const [index, file] of files.sort().reverse().entries()) {
