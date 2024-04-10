@@ -82,9 +82,6 @@ importers:
       nuxt:
         specifier: 3.5.3
         version: 3.5.3(@types/node@20.11.28)(eslint@9.0.0)(rollup@3.29.4)(typescript@5.3.3)
-      prettier:
-        specifier: 3.2.5
-        version: 3.2.5
       serve-handler:
         specifier: 6.1.5
         version: 6.1.5
@@ -8154,12 +8151,6 @@ packages:
   /prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
-    dev: true
-
-  /prettier@3.2.5:
-    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
-    engines: {node: '>=14'}
-    hasBin: true
     dev: true
 
   /pretty-bytes@6.1.1:
