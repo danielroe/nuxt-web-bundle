@@ -31,7 +31,7 @@ export default defineNuxtModule<ModuleOptions>({
 
     nuxt.options._generate = true
 
-    nuxt.hook('nitro:config', config => {
+    nuxt.hook('nitro:config', (config) => {
       config.prerender ||= {}
       config.prerender.crawlLinks = true
       config.prerender.routes = [
@@ -44,6 +44,7 @@ export default defineNuxtModule<ModuleOptions>({
     nuxt.options._layers.push({
       cwd: themeDir,
       config: { rootDir: themeDir, srcDir: themeDir },
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } as any)
 
     const logger = useLogger('nuxt-web-bundle')
@@ -59,6 +60,7 @@ export default defineNuxtModule<ModuleOptions>({
         const files = await globby('**/*', {
           cwd: resolve(nuxt.options.rootDir, 'dist'),
         })
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const getType = await import('mime').then(r => (r as any).getType || r.default.getType)
 
         for (const [index, file] of files.sort().reverse().entries()) {
@@ -87,7 +89,7 @@ export default defineNuxtModule<ModuleOptions>({
         const buf = builder.createBundle()
         await fsp.writeFile(
           resolve(nuxt.options.rootDir, 'dist', options.filename),
-          Buffer.from(buf, buf.byteOffset, buf.byteLength)
+          Buffer.from(buf, buf.byteOffset, buf.byteLength),
         )
         const url = pathToFileURL(resolve(nuxt.options.rootDir, 'dist', options.filename))
         logger.success(`Bundle generated at \`${url}\`.`)
