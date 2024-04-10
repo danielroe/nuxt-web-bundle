@@ -68,7 +68,7 @@
     "expect-type": "0.17.3",
     "get-port-please": "3.1.2",
     "husky": "8.0.3",
-    "lint-staged": "13.3.0",
+    "lint-staged": "15.2.2",
     "nuxt": "3.5.3",
     "serve-handler": "6.1.5",
     "typescript": "5.3.3",
