@@ -7,6 +7,7 @@ import { globby } from 'globby'
 import { basename, dirname, resolve } from 'pathe'
 import { joinURL, parseURL } from 'ufo'
 import { BundleBuilder } from 'wbn'
+import mime from 'mime'
 
 export interface ModuleOptions {
   baseURL: string
@@ -60,13 +61,11 @@ export default defineNuxtModule<ModuleOptions>({
         const files = await globby('**/*', {
           cwd: resolve(nuxt.options.rootDir, 'dist'),
         })
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const getType = await import('mime').then(r => (r as any).getType || r.default.getType)
 
         for (const [index, file] of files.sort().reverse().entries()) {
           const content = await fsp.readFile(resolve(nuxt.options.rootDir, 'dist', file))
           const headers = {
-            'Content-Type': getType(basename(file)) || 'application/octet-stream',
+            'Content-Type': mime.getType(basename(file)) || 'application/octet-stream',
             'Access-Control-Allow-Origin': '*',
           }
           const url = new URL(file, options.baseURL)

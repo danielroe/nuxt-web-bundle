@@ -29,10 +29,10 @@
     "dist"
   ],
   "scripts": {
-    "build": "pnpm dev:prepare && nuxt-module-build",
+    "build": "pnpm dev:prepare && nuxt-module-build build",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
-    "dev:prepare": "pnpm nuxt-module-build --stub && nuxi prepare playground",
+    "dev:prepare": "pnpm nuxt-module-build build --stub && pnpm nuxt-module-build prepare && nuxi prepare playground",
     "docs:dev": "nuxi dev docs",
     "docs:build": "nuxi generate docs",
     "lint": "pnpm lint:all:eslint",
@@ -46,39 +46,39 @@
     "test:types": "tsc --noEmit"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.5.3",
-    "chalk": "^5.2.0",
-    "globby": "^14.0.0",
-    "mime": "^3.0.0",
-    "pathe": "^1.1.1",
-    "ufo": "^1.1.2",
+    "@nuxt/kit": "^3.11.2",
+    "chalk": "^5.3.0",
+    "globby": "^14.0.1",
+    "mime": "^4.0.1",
+    "pathe": "^1.1.2",
+    "ufo": "^1.5.3",
     "wbn": "^0.0.9"
   },
   "devDependencies": {
-    "@nuxt/module-builder": "0.4.0",
-    "@nuxt/schema": "3.5.3",
-    "@nuxt/test-utils": "3.5.3",
-    "@types/mime": "3.0.4",
-    "@types/node": "20.11.28",
+    "@nuxt/eslint-config": "0.3.6",
+    "@nuxt/module-builder": "0.5.5",
+    "@nuxt/schema": "3.11.2",
+    "@nuxt/test-utils": "3.12.0",
+    "@types/mime": "4.0.0",
+    "@types/node": "20.12.7",
     "@types/serve-handler": "6.1.4",
     "@vitest/coverage-v8": "1.4.0",
-    "bumpp": "9.2.1",
+    "bumpp": "9.4.0",
     "conventional-changelog-conventionalcommits": "7.0.2",
     "eslint": "9.0.0",
-    "expect-type": "0.17.3",
+    "expect-type": "0.19.0",
     "get-port-please": "3.1.2",
-    "husky": "8.0.3",
+    "husky": "9.0.11",
     "lint-staged": "15.2.2",
-    "nuxt": "3.5.3",
+    "nuxt": "3.11.2",
     "serve-handler": "6.1.5",
-    "typescript": "5.3.3",
+    "typescript": "5.4.5",
     "vitest": "1.4.0",
-    "vue": "3.3.4",
-    "@nuxt/eslint-config": "0.3.5"
+    "vue": "3.4.21"
   },
   "resolutions": {
-    "@nuxt/kit": "3.5.3",
+    "@nuxt/kit": "3.11.2",
     "nuxt-web-bundle": "link:."
   },
-  "packageManager": "pnpm@8.14.0"
+  "packageManager": "pnpm@8.15.6"
 }
