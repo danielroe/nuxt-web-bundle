@@ -26,7 +26,7 @@ export default defineNuxtModule<ModuleOptions>({
     formatVersion: 'b2',
     filename: 'bundle.wbn',
   }),
-  async setup (options, nuxt) {
+  async setup(options, nuxt) {
     // Skip when preparing
     if (nuxt.options._prepare) return
 
