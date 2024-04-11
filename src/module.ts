@@ -26,7 +26,7 @@ export default defineNuxtModule<ModuleOptions>({
     formatVersion: 'b2',
     filename: 'bundle.wbn',
   }),
-  async setup(options, nuxt) {
+  async setup (options, nuxt) {
     // Skip when preparing
     if (nuxt.options._prepare) return
 
@@ -86,6 +86,7 @@ export default defineNuxtModule<ModuleOptions>({
         }
 
         const buf = builder.createBundle()
+        await fsp.mkdir(resolve(nuxt.options.rootDir, 'dist'), { recursive: true })
         await fsp.writeFile(
           resolve(nuxt.options.rootDir, 'dist', options.filename),
           Buffer.from(buf, buf.byteOffset, buf.byteLength),
