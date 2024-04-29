@@ -3,7 +3,10 @@
   "version": "0.3.0",
   "license": "MIT",
   "description": "Generate web bundles with Nuxt",
-  "repository": "danielroe/nuxt-web-bundle",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielroe/nuxt-web-bundle.git"
+  },
   "keywords": [
     "nuxt",
     "module",
