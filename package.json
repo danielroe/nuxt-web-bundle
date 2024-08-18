@@ -63,7 +63,7 @@
     "@nuxt/schema": "3.12.4",
     "@nuxt/test-utils": "3.14.0",
     "@types/mime": "4.0.0",
-    "@types/node": "20.14.9",
+    "@types/node": "20.16.0",
     "@vitest/coverage-v8": "1.6.0",
     "bumpp": "9.4.1",
     "eslint": "9.0.0",
