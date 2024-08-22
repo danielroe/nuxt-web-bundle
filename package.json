@@ -65,7 +65,7 @@
     "@types/mime": "4.0.0",
     "@types/node": "20.16.0",
     "@vitest/coverage-v8": "1.6.0",
-    "bumpp": "9.4.1",
+    "bumpp": "9.5.2",
     "eslint": "9.0.0",
     "expect-type": "0.19.0",
     "get-port-please": "3.1.2",
