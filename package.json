@@ -63,16 +63,16 @@
     "@nuxt/schema": "3.12.4",
     "@nuxt/test-utils": "3.14.1",
     "@types/mime": "4.0.0",
-    "@types/node": "20.16.10",
+    "@types/node": "20.16.11",
     "@vitest/coverage-v8": "2.1.2",
-    "bumpp": "9.6.1",
+    "bumpp": "9.7.1",
     "eslint": "9.12.0",
-    "expect-type": "1.0.0",
+    "expect-type": "1.1.0",
     "get-port-please": "3.1.2",
     "husky": "9.1.6",
     "lint-staged": "15.2.10",
     "nuxt": "3.12.4",
-    "typescript": "5.6.2",
+    "typescript": "5.6.3",
     "vitest": "2.1.2",
     "vue": "3.4.38"
   },
@@ -80,5 +80,5 @@
     "@nuxt/kit": "3.12.4",
     "nuxt-web-bundle": "link:."
   },
-  "packageManager": "pnpm@9.11.0"
+  "packageManager": "pnpm@9.12.1"
 }
