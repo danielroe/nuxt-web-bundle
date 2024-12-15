@@ -78,7 +78,7 @@ Published under the [MIT License](./LICENCE).
 [npm-version-href]: https://npmjs.com/package/nuxt-web-bundle
 [npm-downloads-src]: https://img.shields.io/npm/dm/nuxt-web-bundle?style=flat-square
 [npm-downloads-href]: https://npm.chart.dev/nuxt-web-bundle
-[github-actions-src]: https://img.shields.io/github/workflow/status/danielroe/nuxt-web-bundle/ci/main?style=flat-square
-[github-actions-href]: https://github.com/danielroe/nuxt-web-bundle/actions?query=workflow%3Aci
+[github-actions-src]: https://img.shields.io/github/actions/workflow/status/danielroe/nuxt-web-bundle/ci.yml?branch=main&style=flat-square
+[github-actions-href]: https://github.com/danielroe/nuxt-web-bundle/actions/workflows/ci.yml
 [codecov-src]: https://img.shields.io/codecov/c/gh/danielroe/nuxt-web-bundle/main?style=flat-square
 [codecov-href]: https://codecov.io/gh/danielroe/nuxt-web-bundle
