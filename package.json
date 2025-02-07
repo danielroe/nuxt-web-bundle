@@ -80,5 +80,5 @@
     "@nuxt/kit": "3.15.4",
     "nuxt-web-bundle": "link:."
   },
-  "packageManager": "pnpm@9.13.0"
+  "packageManager": "pnpm@10.2.1"
 }
