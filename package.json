@@ -60,7 +60,7 @@
   "devDependencies": {
     "@nuxt/eslint-config": "1.0.1",
     "@nuxt/module-builder": "0.8.4",
-    "@nuxt/schema": "3.15.4",
+    "@nuxt/schema": "3.16.0",
     "@nuxt/test-utils": "3.17.1",
     "@types/mime": "4.0.0",
     "@types/node": "22.9.0",
@@ -71,13 +71,13 @@
     "get-port-please": "3.1.2",
     "husky": "9.1.6",
     "lint-staged": "15.2.10",
-    "nuxt": "3.15.4",
+    "nuxt": "3.16.0",
     "typescript": "5.6.3",
     "vitest": "3.0.7",
     "vue": "3.5.13"
   },
   "resolutions": {
-    "@nuxt/kit": "3.15.4",
+    "@nuxt/kit": "3.16.0",
     "nuxt-web-bundle": "link:."
   },
   "packageManager": "pnpm@10.2.1"
