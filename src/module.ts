@@ -30,7 +30,8 @@ export default defineNuxtModule<ModuleOptions>({
     // Skip when preparing
     if (nuxt.options._prepare) return
 
-    nuxt.options.nitro.static || (nuxt.options as any)._generate /* TODO: remove in future */ = true
+    (nuxt.options as any)._generate /* TODO: remove in future */ = true
+    nuxt.options.nitro.static = true
 
     nuxt.hook('nitro:config', (config) => {
       config.prerender ||= {}
