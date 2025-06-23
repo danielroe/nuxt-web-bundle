@@ -30,6 +30,7 @@ export default defineNuxtModule<ModuleOptions>({
     // Skip when preparing
     if (nuxt.options._prepare) return
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (nuxt.options as any)._generate /* TODO: remove in future */ = true
     nuxt.options.nitro.static = true
 
