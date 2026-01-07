@@ -44,9 +44,7 @@
     "dev:prepare": "pnpm nuxt-module-build build --stub && pnpm nuxt-module-build prepare && nuxt prepare playground",
     "docs:dev": "nuxt dev docs",
     "docs:build": "nuxt generate docs",
-    "lint": "pnpm lint:all:eslint",
-    "lint:all:eslint": "pnpm lint:eslint .",
-    "lint:eslint": "eslint --fix",
+    "lint": "pnpm eslint",
     "prepack": "pnpm build",
     "prepare": "husky install",
     "prepublishOnly": "pnpm lint && pnpm test",
@@ -81,6 +79,9 @@
     "typescript": "5.6.3",
     "vitest": "3.2.4",
     "vue": "3.5.20"
+  },
+  "lintStaged": {
+    "*.{js,mjs,cjs,ts,tsx,vue}": "pnpm lint:eslint --fix"
   },
   "resolutions": {
     "@nuxt/kit": "^4.0.0",
