@@ -83,9 +83,5 @@
   "lintStaged": {
     "*.{js,mjs,cjs,ts,tsx,vue}": "pnpm lint:eslint --fix"
   },
-  "resolutions": {
-    "@nuxt/kit": "^4.0.0",
-    "nuxt-web-bundle": "link:."
-  },
   "packageManager": "pnpm@10.21.0"
 }
