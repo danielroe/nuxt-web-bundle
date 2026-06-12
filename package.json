@@ -64,7 +64,7 @@
   "devDependencies": {
     "@nuxt/eslint-config": "1.0.1",
     "@nuxt/module-builder": "1.0.2",
-    "@nuxt/schema": "4.0.3",
+    "@nuxt/schema": "4.4.8",
     "@nuxt/test-utils": "4.0.3",
     "@types/mime": "4.0.0",
     "@types/node": "24.12.4",
@@ -75,10 +75,10 @@
     "get-port-please": "3.1.2",
     "husky": "9.1.6",
     "lint-staged": "17.0.5",
-    "nuxt": "4.0.3",
+    "nuxt": "4.4.8",
     "typescript": "5.6.3",
     "vitest": "4.1.8",
-    "vue": "3.5.20"
+    "vue": "3.5.38"
   },
   "lintStaged": {
     "*.{js,mjs,cjs,ts,tsx,vue}": "pnpm lint:eslint --fix"
