@@ -4,7 +4,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url'
 import { defineNuxtModule, useLogger } from '@nuxt/kit'
 import chalk from 'chalk'
 import { globby } from 'globby'
-import { basename, dirname, resolve } from 'pathe'
+import { basename, resolve } from 'pathe'
 import { joinURL, parseURL } from 'ufo'
 import { BundleBuilder } from 'wbn'
 import mime from 'mime'
@@ -76,10 +76,6 @@ export default defineNuxtModule<ModuleOptions>({
             .replace(/\.html$/, '')
           builder.addExchange(url, 200, headers, content)
 
-          let dir = dirname(url)
-          if (dir === '.') {
-            dir = ''
-          }
           const { pathname } = parseURL(url)
           const treeChar = index === files.length - 1 ? '└─' : '├─'
 
