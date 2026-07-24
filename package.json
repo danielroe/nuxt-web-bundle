@@ -67,21 +67,21 @@
     "@nuxt/schema": "4.0.3",
     "@nuxt/test-utils": "4.0.3",
     "@types/mime": "4.0.0",
-    "@types/node": "24.12.4",
+    "@types/node": "24.13.3",
     "@vitest/coverage-v8": "4.1.10",
     "bumpp": "11.1.0",
     "eslint": "10.7.0",
-    "expect-type": "1.1.0",
-    "get-port-please": "3.1.2",
-    "husky": "9.1.6",
-    "lint-staged": "17.0.5",
+    "expect-type": "1.4.0",
+    "get-port-please": "3.2.0",
+    "husky": "9.1.7",
+    "lint-staged": "17.2.0",
     "nuxt": "4.0.3",
-    "typescript": "5.6.3",
+    "typescript": "5.9.3",
     "vitest": "4.1.10",
     "vue": "3.5.20"
   },
   "lintStaged": {
     "*.{js,mjs,cjs,ts,tsx,vue}": "pnpm lint:eslint --fix"
   },
-  "packageManager": "pnpm@11.1.2"
+  "packageManager": "pnpm@11.17.0"
 }
