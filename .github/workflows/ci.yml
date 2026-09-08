@@ -21,10 +21,6 @@ jobs:
         with:
           runtime: node@22
           cache: true
-          install: false
-
-      - name: 📦 Install dependencies
-        run: pnpm install --frozen-lockfile
 
       - name: 🚧 Set up project
         run: pnpm dev:prepare
@@ -44,10 +40,6 @@ jobs:
         with:
           runtime: node@22
           cache: true
-          install: false
-
-      - name: 📦 Install dependencies
-        run: pnpm install --frozen-lockfile
 
       - name: 🚧 Set up project
         run: pnpm dev:prepare
