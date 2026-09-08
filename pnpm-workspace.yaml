@@ -7,6 +7,6 @@ allowBuilds:
   unrs-resolver: false
 
 overrides:
-  nuxt-web-bundle: "link:."
+  nuxt-web-bundle: "workspace:*"
 
 shamefullyHoist: true
