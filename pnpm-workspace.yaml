@@ -1,5 +1,6 @@
 packages:
   - "playground"
+  - "playground-v5"
 
 allowBuilds:
   '@parcel/watcher': false
@@ -8,5 +9,10 @@ allowBuilds:
 
 overrides:
   nuxt-web-bundle: "workspace:*"
+
+minimumReleaseAgeExclude:
+  - nuxt-nightly
+  - '@nuxt/*'
+  - nuxt@4.6.2
 
 shamefullyHoist: true

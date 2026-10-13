@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "name": "nuxt-web-bundle-playground-v5",
+  "type": "module",
+  "devDependencies": {
+    "nuxt": "npm:nuxt-nightly@5x",
+    "nuxt-web-bundle": "latest"
+  }
+}
