@@ -2,6 +2,7 @@ import fsp from 'node:fs/promises'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 
 import { defineNuxtModule, useLogger } from '@nuxt/kit'
+import type { NuxtConfigLayer } from '@nuxt/schema'
 import chalk from 'chalk'
 import { globby } from 'globby'
 import { basename, resolve } from 'pathe'
@@ -43,8 +44,13 @@ export default defineNuxtModule<ModuleOptions>({
       ].filter(i => i !== '/200.html')
     })
 
+    let publicDir: string
+    nuxt.hook('nitro:init', (nitro) => {
+      publicDir = nitro.options.output.publicDir
+    })
+
     const themeDir = fileURLToPath(new URL('./runtime/extends', import.meta.url))
-    nuxt.options._layers.push({
+    ;(nuxt.options._layers as NuxtConfigLayer[]).push({
       cwd: themeDir,
       config: { rootDir: themeDir, srcDir: themeDir },
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -61,11 +67,11 @@ export default defineNuxtModule<ModuleOptions>({
         builder.setPrimaryURL(options.primaryURL || options.baseURL)
 
         const files = await globby('**/*', {
-          cwd: resolve(nuxt.options.rootDir, 'dist'),
+          cwd: publicDir,
         })
 
         for (const [index, file] of files.sort().reverse().entries()) {
-          const content = await fsp.readFile(resolve(nuxt.options.rootDir, 'dist', file))
+          const content = await fsp.readFile(resolve(publicDir, file))
           const headers = {
             'Content-Type': mime.getType(basename(file)) || 'application/octet-stream',
             'Access-Control-Allow-Origin': '*',
@@ -80,16 +86,16 @@ export default defineNuxtModule<ModuleOptions>({
           const treeChar = index === files.length - 1 ? '└─' : '├─'
 
           process.stdout.write(chalk.gray(`  ${treeChar} ${pathname}\n`))
-          await fsp.rm(resolve(nuxt.options.rootDir, 'dist', file), { force: true })
+          await fsp.rm(resolve(publicDir, file), { force: true })
         }
 
         const buf = builder.createBundle()
-        await fsp.mkdir(resolve(nuxt.options.rootDir, 'dist'), { recursive: true })
+        await fsp.mkdir(publicDir, { recursive: true })
         await fsp.writeFile(
-          resolve(nuxt.options.rootDir, 'dist', options.filename),
-          Buffer.from(buf, buf.byteOffset, buf.byteLength),
+          resolve(publicDir, options.filename),
+          Buffer.from(buf.buffer, buf.byteOffset, buf.byteLength),
         )
-        const url = pathToFileURL(resolve(nuxt.options.rootDir, 'dist', options.filename))
+        const url = pathToFileURL(resolve(publicDir, options.filename))
         logger.success(`Bundle generated at \`${url}\`.`)
       })
     })
