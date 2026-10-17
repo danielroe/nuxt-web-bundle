@@ -64,7 +64,7 @@
   },
   "devDependencies": {
     "@nuxt/eslint-config": "1.16.0",
-    "@nuxt/module-builder": "1.0.2",
+    "@nuxt/module-builder": "1.0.3",
     "@nuxt/schema": "4.6.2",
     "@nuxt/test-utils": "4.3.3",
     "@types/mime": "4.0.0",
@@ -79,7 +79,7 @@
     "nuxt": "4.6.2",
     "typescript": "5.9.3",
     "vitest": "5.0.3",
-    "vue": "3.5.20"
+    "vue": "3.5.44"
   },
   "lintStaged": {
     "*.{js,mjs,cjs,ts,tsx,vue}": "pnpm lint:eslint --fix"
