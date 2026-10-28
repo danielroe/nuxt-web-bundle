@@ -65,7 +65,7 @@
   "devDependencies": {
     "@nuxt/eslint-config": "1.17.0",
     "@nuxt/module-builder": "1.0.3",
-    "@nuxt/schema": "4.6.2",
+    "@nuxt/schema": "4.6.3",
     "@nuxt/test-utils": "4.3.4",
     "@types/mime": "4.0.0",
     "@types/node": "24.19.2",
@@ -76,7 +76,7 @@
     "get-port-please": "3.2.0",
     "husky": "9.1.7",
     "lint-staged": "17.6.0",
-    "nuxt": "4.6.2",
+    "nuxt": "4.6.3",
     "typescript": "5.9.3",
     "vitest": "5.0.5",
     "vue": "3.5.44"
