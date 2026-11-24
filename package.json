@@ -79,7 +79,7 @@
     "nuxt": "4.6.4",
     "typescript": "5.9.3",
     "vitest": "5.1.1",
-    "vue": "3.5.45"
+    "vue": "3.5.46"
   },
   "lintStaged": {
     "*.{js,mjs,cjs,ts,tsx,vue}": "pnpm lint:eslint --fix"
